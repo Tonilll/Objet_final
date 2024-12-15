@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModificationTempsActivity">
+
+    <EditText
+        android:id="@+id/etDans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/Rien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDans" />
+
+    <EditText
+        android:id="@+id/etChaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/Rien"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChaque" />
+
+    <Button
+        android:id="@+id/btnConfirmation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/btnConfirmation"
+        app:layout_constraintEnd_toStartOf="@+id/btnRetour3"
+        app:layout_constraintStart_toStartOf="@+id/etChaque"
+        app:layout_constraintTop_toBottomOf="@+id/etChaque" />
+
+    <Button
+        android:id="@+id/btnRetour3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnRetour"
+        app:layout_constraintEnd_toEndOf="@+id/etChaque"
+        app:layout_constraintStart_toEndOf="@+id/btnConfirmation2"
+        app:layout_constraintTop_toTopOf="@+id/btnConfirmation2" />
+
+    <TextView
+        android:id="@+id/tvModifTemps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/tvModifTemps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/Dans"
+        app:layout_constraintStart_toStartOf="@+id/etDans"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvChaque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/Chaque"
+        app:layout_constraintStart_toStartOf="@+id/etChaque"
+        app:layout_constraintTop_toBottomOf="@+id/etDans" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvModifTemps">
+        <RadioButton
+            android:id="@+id/rbtn30Min"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:text="@string/trenteMinute"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <RadioButton
+            android:id="@+id/rbtn1H"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/UneHeure"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rbtn1H30Min"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:text="@string/UneHeure30Minute"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvErreur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/Rien"
+        app:layout_constraintBottom_toBottomOf="@+id/etChaque"
+        app:layout_constraintStart_toEndOf="@+id/etDans"
+        app:layout_constraintTop_toTopOf="@+id/etDans" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

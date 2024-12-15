@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Objet_connecte_final</string>
+    <string name="tvBienvenue">Bienvenue</string>
+    <string name="tvIP">IP</string>
+    <string name="tvPort">Port</string>
+    <string name="IP">IP</string>
+    <string name="Port">Port</string>
+    <string name="tvTempsHeure">0</string>
+    <string name="btnRetour">Retour</string>
+    <string name="tvMenu">Menu</string>
+    <string name="btnHoraire">Horaire</string>
+    <string name="btnModifTemps">Modification temps</string>
+    <string name="btnModifHeure">Modification heure</string>
+    <string name="btnNotification">Notification</string>
+    <string name="tvModifHeure">Modification de l\'heure</string>
+    <string name="btnConfirmation">Confirmer</string>
+    <string name="tvModifTemps">Modification du temps</string>
+    <string name="trenteMinute">30 Min</string>
+    <string name="UneHeure">1 H</string>
+    <string name="UneHeure30Minute">1 H 30</string>
+    <string name="Dans">Dans :</string>
+    <string name="Chaque">Chaque :</string>
+    <string name="Rien" />
+    <string name="tvNotification">Notification</string>
+    <string name="tvActiveNotif">Activer les notifications</string>
+    <string name="btnX">X</string>
+
+    <string-array name="spinChoix">
+        <item>Temps</item>
+        <item>Heure</item>
+    </string-array>
+</resources>

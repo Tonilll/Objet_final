@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+
+    <TextView
+        android:id="@+id/tvNotication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:text="@string/tvNotification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvActiveNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvActiveNotif"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNotif"
+        app:layout_constraintEnd_toEndOf="@id/tvNotication"
+        app:layout_constraintStart_toEndOf="@+id/btnNotif"
+        app:layout_constraintTop_toTopOf="@+id/btnNotif" />
+
+    <Button
+        android:id="@+id/btnRetour4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="@string/btnRetour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNotif" />
+
+    <Button
+        android:id="@+id/btnNotif"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:text="@string/btnX"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@id/tvActiveNotif"
+        app:layout_constraintStart_toStartOf="@id/tvNotication"
+        app:layout_constraintTop_toBottomOf="@+id/tvNotication"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
